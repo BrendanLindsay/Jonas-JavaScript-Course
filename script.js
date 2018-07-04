@@ -490,7 +490,27 @@ var john = {
     isMarried: false
 };
 
+// Object literal
+console.log(john.firstName);
+console.log(john['lastName']);
+var x = 'birthYear';
+console.log(john[x]);
+
+john.job = 'designer';
+john['isMarried'] = true;
 console.log(john);
+
+// new Object syntax
+var jane = new Object();
+jane.name = 'Jane';
+jane.birthYear = 1969;
+jane['lastName'] = 'Smith';
+console.log(jane);
+
+/*****************************
+ Objects and methods
+*****************************/
+
 
 
 
