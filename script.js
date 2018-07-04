@@ -481,6 +481,27 @@ console.log(total);
  Objects and properties
 *****************************/
 
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1990,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: false
+};
+
+console.log(john);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
