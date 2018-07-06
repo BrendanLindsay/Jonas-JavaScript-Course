@@ -538,7 +538,6 @@ Let's remember the first coding challenge where Mark and John compared their BMI
 Remember: BMI = mass / height^2 = mass / (height * height). (mass in kg and height in meter).
 
 GOOD LUCK 😀
-*/
 
 var john = {
     firstName: 'John',
@@ -552,6 +551,22 @@ var john = {
 
 john.calcBMI();
 console.log(john);
+*/
+/*****************************
+ Loops and iteration
+*****************************/
+for (var i = 0; i < 10; i++) {
+    console.log(i);
+}
+// i = 0, 0 < 10 true, log i to console, i++
+
+
+
+
+
+
+
+
 
 
 
