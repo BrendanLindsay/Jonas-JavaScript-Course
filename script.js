@@ -560,9 +560,11 @@ for (var i = 0; i < 10; i++) {
 }
 // i = 0, 0 < 10 true, log i to console, i++
 
+var john = ['John', 'Smith', 1990, 'designer', false, 'green'];
 
-
-
+for (var i = 0; i < john.length; i++) {
+    console.log(john[i]);
+}
 
 
 
