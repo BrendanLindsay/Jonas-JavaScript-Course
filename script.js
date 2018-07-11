@@ -555,25 +555,54 @@ console.log(john);
 /*****************************
  Loops and iteration
 *****************************/
+/*
 for (var i = 0; i < 10; i++) {
     console.log(i);
 }
 // i = 0, 0 < 10 true, log i to console, i++
 
+// For loop
 var john = ['John', 'Smith', 1990, 'designer', false, 'green'];
 
 for (var i = 0; i < john.length; i++) {
     console.log(john[i]);
 }
 
+// While loop
+var i = 0;
+while (i < john.length) {
+    console.log(john[i]);
+    i++;
+}
+*/
+/*
+// Continue and break statements
+var john = ['John', 'Smith', 1990, 'designer', false, 'green'];
+
+for (var i = 0; i < john.length; i++) {
+    if (typeof john[i] !== 'string') continue;
+    console.log(john[i]);
+}
+
+for (var i = 0; i < john.length; i++) {
+    if (typeof john[i] !== 'string') break;
+    console.log(john[i]);
+}
 
 
+// Backwards looping
+var john = ['John', 'Smith', 1990, 'designer', false, 'green'];
 
+for (var i = john.length - 1; i >= 0; i--) {
+    if (typeof john[i] !== 'string') continue;
+    console.log(john[i]);
+}
 
-
-
-
-
+for (var i = john.length - 1; i >= 0; i--) {
+    if (typeof john[i] !== 'string') break;
+    console.log(john[i]);
+}
+*/
 
 
 
