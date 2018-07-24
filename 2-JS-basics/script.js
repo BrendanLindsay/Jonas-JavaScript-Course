@@ -604,8 +604,8 @@ for (var i = john.length - 1; i >= 0; i--) {
 }
 */
 /*****************************
-* CODING CHALLENGE 5
-*/
+ Coding Challenge 5
+*****************************/
 
 /*
 Remember the tip calculator challenge? Let's create a more advanced version using everything we learned!
@@ -630,7 +630,7 @@ Mark likes to tip 20% of the bill when the bill is less than $100, 10% when the 
 
 GOOD LUCK 😀
 */
-
+/*
 var john = {
     fullName: 'John Smith',
     bills: [124, 48, 268, 180, 42],
@@ -706,7 +706,7 @@ if (john.average > mark.average) {
 }   else if (mark.average > john.average) {
     console.log(mark.fullName + '\'s family pays higher tips, average of $' + mark.average);
 }
-
+*/
 
 
 
