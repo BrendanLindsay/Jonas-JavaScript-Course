@@ -48,6 +48,29 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         document.querySelector('#current-' + activePlayer).textContent = roundScore;
     } else {
         //Next player
+        nextPlayer();
+    }
+});
+
+document.querySelector('.btn-hold').addEventListener('click', function() {
+    //Add current score to players score
+    scores[activePlayer] += roundScore;
+    //Update UI
+    document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
+    //Check if player won game
+    if (scores[activePlayer] >= 10) {
+        document.querySelector('#name-' + activePlayer).textContent = 'WINNER!';
+        document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
+        document.querySelector('.player-' + activePlayer + '-panel').classList.toggle('winner');
+        document.querySelector('.dice').style.display = 'none';
+    } else {
+    //Next player
+    nextPlayer();
+    }
+});
+
+//Function to change to the next player
+function nextPlayer() {
         activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
         roundScore = 0;
         document.getElementById('current-0').textContent = '0';
@@ -59,21 +82,7 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
 
         //When 1 is rolled, hide the dice again
         document.querySelector('.dice').style.display = 'none';
-    }
-});
-/*
-document.querySelector('.btn-hold').addEventListener('click', function() {
-    //Add current score to players score
-    activePlayer === 0
-    document.querySelector('#score-' + activePlayer).textContent + roundScore;
-
-    //Update UI
-
-
-
-});
-
-*/
+}
 
 
 
